@@ -1,0 +1,37 @@
+[user]
+	name = user
+	email = email
+#[includeIf "gitdir:~/Documents/Work/<path>"]
+#    path = ~/Documents/Work/<path>/.gitconfig
+
+[core]
+	autocrlf = input
+	safecrlf = false
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	sb = status -sb
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+	logg2 = log --all --decorate --oneline --graph
+        logg = log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all
+        file = log -p
+	cia = commit --amend
+	cm = checkout master
+        shortlogg = shortlog --all --summary
+        update-from = "!f() { \
+            git status --porcelain | grep '^.' && { echo 'Working directory is not clean. Stash or commit your changes first.'; return 1; }; \
+            git fetch $1 --prune; \
+            git merge --ff-only $1/$2 || { \
+                echo 'Fast-forward merge was not possible. Rebasing instead.'; \
+                git rebase --rebase-merges $1/$2; \
+            }; \
+            git --no-pager log HEAD..$1/$2 --oneline; \
+        }; f"
+        cleanbr = "!f() { \
+             git br | grep -Ev 'main|master' | xargs git br -D; \
+        }; f"
+
