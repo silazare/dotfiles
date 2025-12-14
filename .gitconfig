@@ -17,8 +17,8 @@
 	type = cat-file -t
 	dump = cat-file -p
 	logg2 = log --all --decorate --oneline --graph
-        logg = log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all
-        file = log -p
+	logg = log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all
+    file = log -p
 	cia = commit --amend
 	cm = checkout master
         shortlogg = shortlog --all --summary
