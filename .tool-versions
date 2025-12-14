@@ -3,7 +3,7 @@ awscli 2.31.27
 dive 0.13.1
 eks-node-viewer 0.7.1
 fzf 0.65.1
-gcloud 536.0.0
+gcloud 549.0.1
 golang 1.24.3
 helm 3.18.6
 infracost 0.10.41
@@ -15,7 +15,6 @@ krew 0.4.5
 kubectl 1.34.1
 kubectx 0.9.5
 kubent 0.7.3
-kubetail 0.10.1
 packer 1.14.2
 poetry 2.2.1
 python 3.12.12
@@ -23,7 +22,7 @@ sops 3.10.2
 terraform 1.14.2
 terraform-docs 0.20.0
 terraformer 0.8.30
-terragrunt 0.81.7 0.93.8
+terragrunt 0.93.8
 terramate 0.14.7
 tflint 0.59.1
 tmux 3.5a
