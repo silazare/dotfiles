@@ -1,12 +1,17 @@
 [user]
 	name = user
 	email = email
+	signingkey = ~/.ssh/id_ed25519.pub
 #[includeIf "gitdir:~/Documents/Work/<path>"]
 #    path = ~/Documents/Work/<path>/.gitconfig
 
 [core]
 	autocrlf = input
 	safecrlf = false
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
 [alias]
 	co = checkout
 	ci = commit
@@ -18,7 +23,7 @@
 	dump = cat-file -p
 	logg2 = log --all --decorate --oneline --graph
 	logg = log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all
-    file = log -p
+	file = log -p
 	cia = commit --amend
 	cm = checkout master
         shortlogg = shortlog --all --summary
