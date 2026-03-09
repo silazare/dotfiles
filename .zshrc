@@ -151,7 +151,6 @@ zsh_gcloud_prompt() {
   echo -n "gcp: $(<$HOME/.config/gcloud/active_config )"
 }
 
-
 # Kube PS1
 PROMPT='$(kube_ps1)'$PROMPT
 POWERLEVEL9K_CUSTOM_KUBE_PS1='kube_ps1'
@@ -198,18 +197,7 @@ echo -e "\033]6;1;bg;blue;brightness;33\a"
 # ASDF
 export ASDF_DATA_DIR="/Users/svyatoslav/.asdf"
 export PATH="$ASDF_DATA_DIR/shims:$PATH"
-export PATH="$PATH:$HOME/.asdf/installs/python/3.11.11/bin"
 alias asdfu="cut -d' ' -f1 ~/.tool-versions | xargs -I{} asdf plugin add {} && asdf install"
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/svyatoslav/.lmstudio/bin"
-# End of LM Studio CLI section
-
-# Cursor
-export PATH="/Applications/Cursor.app/Contents/Resources/app/bin:$PATH"
-
-# Claude Code
-export PATH="/Users/svyatoslav/.local/bin:$PATH"
 
 # FZF customisation
 KUBECTX_IGNORE_FZF=1
@@ -219,3 +207,6 @@ KUBECTX_IGNORE_FZF=1
 
 # Krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# Claude Code
+export PATH="$HOME/.local/bin:$PATH"
