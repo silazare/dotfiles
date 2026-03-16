@@ -17,7 +17,6 @@ kubectx 0.9.5
 kubent 0.7.3
 packer 1.14.2
 poetry 2.2.1
-python 3.12.12
 sops 3.10.2
 terraform 1.14.2
 terraform-docs 0.20.0
