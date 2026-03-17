@@ -190,9 +190,6 @@ export BUILDKIT_PROGRESS=plain
 export VAULT_ADDR="https://vault.pyn.ru"
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
-# Added by Windsurf
-export PATH="/Users/user/.codeium/windsurf/bin:$PATH"
-
 # Added by Antigravity
 export PATH="/Users/user/.antigravity/antigravity/bin:$PATH"
 
@@ -204,3 +201,9 @@ if [ -f '/Users/user/yandex-cloud/completion.zsh.inc' ]; then source '/Users/use
 
 # Krew
 export PATH="${HOME}/.krew/bin:$PATH"
+
+# Claude Code
+export PATH="$HOME/.local/bin:$PATH"
+
+# opencode
+export PATH=/Users/user/.opencode/bin:$PATH
