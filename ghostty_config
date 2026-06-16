@@ -1,0 +1,32 @@
+font-family = "MesloLGS NF"
+font-size = 13
+sidebar-font-size = 14
+surface-tab-bar-font-size = 11
+custom-shader-animation = false
+font-feature = +liga
+
+background = #121a21
+foreground = #e6e1cf
+cursor-color = #dcf252
+selection-background = #304251
+
+palette = 0=#000000
+palette = 1=#ff4c41
+palette = 2=#c4d264
+palette = 3=#eccd58
+palette = 4=#40b2e0
+palette = 5=#f5878a
+palette = 6=#a3e9d4
+palette = 7=#feffff
+palette = 8=#414141
+palette = 9=#ff7c77
+palette = 10=#dcf152
+palette = 11=#fff68b
+palette = 12=#77dcff
+palette = 13=#ffb4b8
+palette = 14=#a3e9d5
+palette = 15=#feffff
+
+working-directory = ~/code
+split-divider-color = #414141
+scrollback-limit = 100000
