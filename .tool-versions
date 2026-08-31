@@ -1,6 +1,7 @@
 argo 4.0.5
 argocd 3.2.1
 awscli 2.31.27
+crane 0.22.0
 dive 0.13.1
 eks-node-viewer 0.7.1
 fzf 0.65.1
