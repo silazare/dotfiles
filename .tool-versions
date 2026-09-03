@@ -21,7 +21,7 @@ kubectx 0.9.5
 kubent 0.7.3
 packer 1.14.2
 sops 3.10.2
-terraform 1.14.2
+terraform 1.16.0
 terraform-docs 0.20.0
 terraformer 0.8.30
 terragrunt 0.93.8
