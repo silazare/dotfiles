@@ -1,0 +1,11 @@
+# mkdir -p ~/.config/sofka
+[views."v1/pods"]
+columns = [
+  #{ name = "CPU/R",  metric = "cpu-request", wide = true },
+  { name = "%CPU/R", metric = "cpu-request-utilization", wide = true },
+  { name = "%CPU/L", metric = "cpu-limit-utilization", wide = true },
+
+  #{ name = "MEM/R",  metric = "memory-request", wide = true },
+  { name = "%MEM/R", metric = "memory-request-utilization", wide = true },
+  { name = "%MEM/L", metric = "memory-limit-utilization", wide = true },
+]
