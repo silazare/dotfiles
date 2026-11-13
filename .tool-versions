@@ -32,3 +32,4 @@ tflint 0.59.1
 tmux 3.5a
 vault 1.14.10
 yamllint 1.38.0
+yq 4.54.3
