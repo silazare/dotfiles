@@ -9,3 +9,17 @@ columns = [
   { name = "%MEM/R", metric = "memory-request-utilization", wide = true },
   { name = "%MEM/L", metric = "memory-limit-utilization", wide = true },
 ]
+
+[views."v1/persistentvolumes"]
+columns = [
+  { name = "CLAIM-NS", path = "/spec/claimRef/namespace" },
+  { name = "ACCESS", path = "/spec/accessModes/0", wide = true },
+  { name = "RECLAIM", path = "/spec/persistentVolumeReclaimPolicy", wide = true },
+  { name = "STORAGECLASS", path = "/spec/storageClassName", wide = true },
+]
+
+[views."v1/persistentvolumeclaims"]
+columns = [
+  { name = "ACCESS", path = "/spec/accessModes/0", wide = true },
+  { name = "STORAGECLASS", path = "/spec/storageClassName", wide = true },
+]
